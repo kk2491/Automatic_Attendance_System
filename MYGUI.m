@@ -32,8 +32,7 @@ S.pb = uicontrol('style','push',...
                  'busyaction','cancel',...
                  'interrupt','off');             
                           
-             
-             
+                 
 function [] = pb_call1(varargin)
 % Callback for pushbutton.
 h = varargin{1}; % Get the caller's handle.
@@ -46,12 +45,7 @@ demo();
 A = rand(3000000,1);
 A = sort(A); %#ok 
 set(h,'str','Mark the Attendance','backg',col)  % Now reset the button features.
-
-
-
-
-             
-             
+     
 function [] = pb_call2(varargin)
 % Callback for pushbutton.
 h = varargin{1}; % Get the caller's handle.
@@ -76,7 +70,4 @@ mails();
 A = rand(3000000,1);
 A = sort(A); %#ok 
 set(h,'str','Send report to parents via mail','backg',col)  % Now reset the button features.
-
-
-
 
